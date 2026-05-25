@@ -1,1 +1,81 @@
+# Salesforce Training – Week 1
 
+## Introduction
+
+This repository contains my learning progress, hands-on practice, assignments, notes, and practical activities completed during Week 1 of the Salesforce Summer Training Program.
+
+During this week, I will learn Salesforce CRM fundamentals, business workflows, automation, Apex programming, SOQL, triggers, asynchronous processing, and Salesforce development concepts through Trailhead modules and practical exercises.
+
+Each day focuses on different Salesforce topics to build a strong foundation in Salesforce development and administration.
+
+---
+
+# Day 1 – Salesforce CRM Basics
+
+## Topics Covered
+
+- Introduction to Salesforce
+- What is CRM
+- Salesforce Developer Role
+- Salesforce Playground Setup
+- Accounts, Contacts, Leads, and Opportunities
+- Business Workflow in Salesforce
+- Real-World CRM Mapping
+- Salesforce Cloud Platform Basics
+
+---
+
+## Key Learnings
+
+- Understood the concept of CRM (Customer Relationship Management)
+- Learned how Salesforce helps businesses manage customer relationships
+- Explored the role of a Salesforce Developer
+- Learned the purpose of Salesforce Playground for hands-on practice
+- Understood Salesforce objects:
+  - Account
+  - Contact
+  - Lead
+  - Opportunity
+
+- Learned the workflow:
+
+  Lead → Contact → Opportunity → Customer
+
+- Understood how Salesforce improves:
+  - Automation
+  - Collaboration
+  - Customer management
+  - Reporting and analytics
+
+- Explored a real-world example using the College Admission System
+
+---
+
+## Modules Completed
+
+### Salesforce Values: Quick Look
+Learned:
+- Salesforce company values
+- Customer success
+- Innovation and trust
+
+### Salesforce Developer: Quick Look
+Learned:
+- Salesforce Developer role
+- Application customization
+- Platform development basics
+
+### Salesforce CRM
+Covered:
+- CRM concepts
+- Customer management
+- Sales pipeline
+- Business workflow
+- Lead and opportunity management
+
+### Trailhead Playground Management
+Learned:
+- Creating Salesforce Playground
+- Managing practice environment
+- Completing Trailhead challenges
+- Hands-on platform usage
