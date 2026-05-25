@@ -1,94 +1,83 @@
-# Day 1 – Introduction to Salesforce
-
-## Objective
-Understand the basics of Salesforce CRM and its applications.
+# Day 1 – Salesforce CRM Basics
 
 ---
 
-## Topics Covered
+# Topics Covered
 
-- What is Salesforce
-- What is CRM
-- Salesforce Interface Basics
-- Objects and Records
-- Salesforce Admin vs Developer
-
----
-
-## Videos Watched
-
-1. What is Salesforce?
-2. Salesforce CRM Tutorial for Beginners
-3. Salesforce CRM Full Tutorial for Beginners
+## Introduction to Salesforce
+- Overview of Salesforce Platform
+- Importance of Salesforce in modern businesses
+- Cloud-based CRM technology
 
 ---
 
-## Trailhead Modules
-
-- Platform Basics
-- Data Model Basics
-
----
-
-## Key Learnings
-
-### What is CRM?
-CRM stands for Customer Relationship Management.
-
-It helps companies:
-- Manage customer data
-- Improve communication
-- Track sales and services
+## What is CRM?
+- Definition of CRM (Customer Relationship Management)
+- Importance of customer relationship management
+- Managing customer data and communication
 
 ---
 
-### What is Salesforce?
-Salesforce is a cloud-based CRM platform used to automate business processes and manage customer relationships.
+## Salesforce Developer Role
+- Responsibilities of a Salesforce Developer
+- Custom application development
+- Automation and workflow creation
+- Apex programming and Lightning Components
 
 ---
 
-### Objects in Salesforce
-Objects are like database tables.
-
-Examples:
-- Account
-- Contact
-- Lead
+## Salesforce Playground Setup
+- Creating Trailhead account
+- Setting up Salesforce Playground
+- Exploring Salesforce interface and dashboard
 
 ---
 
-### Records in Salesforce
-Records are rows inside objects.
+## Salesforce Standard Objects
+### Lead
+A Lead represents a potential customer or inquiry generated through marketing or communication channels.
 
-Example:
-A customer detail inside Contact Object is a record.
+### Account
+An Account represents an organization, institution, or company associated with the business.
 
----
+### Contact
+A Contact represents an individual person connected to an account.
 
-### Admin vs Developer
-
-| Admin | Developer |
-|---|---|
-| Manages Salesforce | Develops applications |
-| No-code configuration | Coding using Apex |
-| Creates reports | Builds custom features |
+### Opportunity
+An Opportunity represents a possible sales deal or business process currently in progress.
 
 ---
 
-## Real-world Application
+# Key Learnings
 
-College Management System using Salesforce.
-
-Possible Objects:
-- Student
-- Faculty
-- Course
-- Attendance
-- Examination
+- Salesforce is a cloud-based CRM platform used by organizations to manage customer relationships and business operations efficiently.
+- CRM helps businesses track customer interactions, sales activities, inquiries, and communication in a centralized system.
+- Salesforce provides powerful tools for automation, reporting, analytics, and application development.
+- Salesforce Developers build customized business applications using Apex, Lightning Components, workflows, and integrations.
+- Salesforce Objects and Records help organize and store business data systematically.
 
 ---
 
-## Doubts / Questions
+# CRM Workflow
 
-- Difference between standard and custom objects
-- How Salesforce stores data internally
+## Business Process Flow
+
+```text
+Lead → Contact → Opportunity → Customer
+This workflow explains how organizations convert inquiries into customers by tracking each stage of interaction and sales activities.
+Real-World Mapping – College Admission System
+Salesforce Object
+Real-World Example
+Lead
+Student Inquiry
+Account
+College
+Contact
+Student
+Opportunity
+Admission Process
+##Trailhead Modules Completed
+Salesforce Values: Quick Look
+Salesforce Developer: Quick Look
+Salesforce CRM
+Trailhead Playground Management
