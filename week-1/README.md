@@ -140,16 +140,6 @@ Learned:
 
 ---
 
-
-
-## Conclusion
-
-Day 2 provided a strong understanding of Salesforce Platform structure, application architecture, CRM integration, and development concepts. It also introduced real-world thinking for designing business applications using Salesforce.
-
-
-
----
-
 # Day 3 – Data Modeling and Business Logic
 
 ## Topics Learned
@@ -224,5 +214,4 @@ Used to prevent invalid data.
 
 ---
 
-# Conclusion
-Week 1 provided a strong foundation in Salesforce basics and enterprise data management concepts. These concepts are essential for advanced Salesforce development and automation.
+
