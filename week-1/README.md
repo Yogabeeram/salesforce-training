@@ -262,4 +262,51 @@ By the end of Week 1, I understood:
 - Business process automation
 - Flow Builder basics
 - Enterprise workflow improvement techniques
+---
 
+# Day 5 – Apex Introduction
+
+## Learned:
+- What is Apex
+- Declarative vs Programmatic development
+- Variables and logic
+- SOQL basics
+- DML operations
+- Flow vs Apex
+- Enterprise business logic
+
+---
+
+# Key Skills Developed
+
+- CRM understanding
+- Business process thinking
+- Automation design
+- Data management
+- No-code development
+- Basic programming logic
+
+---
+
+# Why Apex Matters
+
+Apex allows Salesforce developers to:
+- Build custom logic
+- Handle complex automation
+- Integrate external systems
+- Create scalable enterprise solutions
+
+---
+
+# Overall Week 1 Outcome
+
+By the end of Week 1, I understood:
+- Salesforce ecosystem
+- CRM workflows
+- Security concepts
+- Business automation
+- Flow Builder
+- Apex basics
+- Declarative vs programmatic development
+- Enterprise application logic
+```
