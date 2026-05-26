@@ -162,22 +162,16 @@ Update available seats automatically after each registration.
 
 ---
 
-# Flow Design Thinking
+## Flow Design Thinking
 
-## Selected Process:
+### Selected Process:
 Auto Email After Student Registration
 
 ---
 
-```md
-# Flow Design Thinking
 
-## Selected Process:
-Auto Email After Student Registration
 
----
-
-# Flow Diagram
+## Flow Diagram
 
 ```text
 [Student Registration Submitted]
@@ -198,7 +192,6 @@ Auto Email After Student Registration
          |
          v
         End
-```
 ```
 
 # Manual vs Automated Process
