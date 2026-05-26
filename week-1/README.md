@@ -214,4 +214,52 @@ Used to prevent invalid data.
 
 ---
 
+## Day 4
+Flow Builder and Business Automation.
+
+### Learned:
+- What is Flow Builder
+- Types of Flows
+- Automation Concepts
+- Record Triggered Flows
+- Screen Flows
+- Business Workflow Automation
+- Manual vs Automated Systems
+
+---
+
+# Key Skills Developed
+
+- CRM Understanding
+- Business Process Thinking
+- Workflow Design
+- Automation Concepts
+- Salesforce Navigation
+- No-Code Development
+
+---
+
+# Importance of Automation
+
+Automation helps organizations:
+- Reduce repetitive work
+- Improve consistency
+- Increase productivity
+- Reduce operational costs
+- Improve customer experience
+
+Salesforce Flow Builder allows businesses to automate workflows without programming knowledge.
+
+---
+
+# Overall Learning Outcome
+
+By the end of Week 1, I understood:
+- Salesforce ecosystem
+- CRM workflow management
+- Security concepts
+- Data management
+- Business process automation
+- Flow Builder basics
+- Enterprise workflow improvement techniques
 
