@@ -326,6 +326,43 @@ Together they improve:
 
 ---
 
+# Day 7 – Testing and Developer Workflow
+
+## Learned
+- Apex Testing
+- Asynchronous Apex
+- Salesforce DX
+- Salesforce CLI
+- Version control
+- Structured development workflow
+
+---
+
+# Key Skills Developed
+
+- CRM understanding
+- Workflow automation
+- Apex basics
+- Database querying
+- Event-driven programming
+- Testing concepts
+- Professional developer workflow
+
+---
+
+# Importance of Testing and Workflow
+
+Enterprise systems require:
+- Reliable testing
+- Structured development
+- Team collaboration
+- Version control
+- Background processing
+
+GitHub, DX, and CLI help teams build scalable and maintainable systems.
+
+---
+
 # Overall Week 1 Outcome
 
 By the end of Week 1, I understood:
@@ -333,8 +370,8 @@ By the end of Week 1, I understood:
 - CRM workflows
 - Flow Builder
 - Apex basics
-- SOQL querying
-- Apex Triggers
-- Enterprise automation concepts
+- SOQL and Triggers
+- Testing concepts
+- DX and CLI workflow
+- Enterprise software development practices
 ```
-
