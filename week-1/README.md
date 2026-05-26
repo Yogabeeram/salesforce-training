@@ -252,17 +252,7 @@ Salesforce Flow Builder allows businesses to automate workflows without programm
 
 ---
 
-# Overall Learning Outcome
 
-By the end of Week 1, I understood:
-- Salesforce ecosystem
-- CRM workflow management
-- Security concepts
-- Data management
-- Business process automation
-- Flow Builder basics
-- Enterprise workflow improvement techniques
----
 
 # Day 5 – Apex Introduction
 
@@ -297,16 +287,54 @@ Apex allows Salesforce developers to:
 - Create scalable enterprise solutions
 
 ---
+# Day 6 – SOQL and Apex Triggers
+
+## Topics Learned
+- SOQL queries
+- SOSL basics
+- Apex Triggers
+- Before vs After Trigger
+- Event-driven systems
+- Flow vs Trigger
+
+---
+
+# Key Skills Developed
+
+- CRM understanding
+- Workflow automation
+- Business process thinking
+- Basic Apex logic
+- Database querying
+- Event-driven automation
+
+---
+
+# Importance of SOQL and Triggers
+
+SOQL helps retrieve Salesforce data efficiently.
+
+Triggers help enterprise systems automatically react to:
+- Record changes
+- User actions
+- Business events
+
+Together they improve:
+- Productivity
+- Automation
+- System intelligence
+
+---
 
 # Overall Week 1 Outcome
 
 By the end of Week 1, I understood:
 - Salesforce ecosystem
 - CRM workflows
-- Security concepts
-- Business automation
 - Flow Builder
 - Apex basics
-- Declarative vs programmatic development
-- Enterprise application logic
+- SOQL querying
+- Apex Triggers
+- Enterprise automation concepts
 ```
+
