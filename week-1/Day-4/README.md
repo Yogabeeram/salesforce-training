@@ -190,6 +190,7 @@ Auto Email After Student Registration
          |
          v
         End
+'''md
 # Manual vs Automated Process
 
 ## Process: Fee Payment Reminder
