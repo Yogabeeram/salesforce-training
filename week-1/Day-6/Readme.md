@@ -1,65 +1,111 @@
-
 # Day 6 – SOQL and Apex Triggers
 
-# What is SOQL?
+## What is SOQL?
 
 SOQL (Salesforce Object Query Language) is used to retrieve data from Salesforce objects.
 
-It is similar to SQL but designed specifically for Salesforce.
-
-SOQL helps developers:
+It helps developers:
 - Retrieve records
 - Filter data
 - Access related objects
-- Generate reports
-- Process business logic
+- Process business information
 
 ---
 
-# Why SOQL is Important
+# Example Queries
 
-Enterprise systems store large amounts of data such as:
-- Students
-- Courses
-- Faculty
-- Attendance
-- Fees
+```sql
+SELECT Name FROM Student__c
+```
 
-SOQL helps retrieve the required data efficiently.
+```sql
+SELECT Name, Attendance__c
+FROM Student__c
+WHERE Attendance__c < 75
+```
 
-Example uses:
-- Find students with low attendance
-- Retrieve course details
-- Get pending fee records
+```sql
+SELECT Name
+FROM Student__c
+WHERE Fee_Status__c = 'Pending'
+```
 
 ---
 
 # What is an Apex Trigger?
 
-An Apex Trigger is code that executes automatically when data changes occur in Salesforce.
+An Apex Trigger is code that runs automatically when records are inserted, updated, or deleted.
 
-Triggers run:
-- Before insert
-- After insert
-- Before update
-- After update
-- Before delete
-- After delete
-
-Triggers help automate event-driven business logic.
+Triggers help automate business processes and event-driven actions.
 
 ---
 
-# Why Triggers Are Important
+# Trigger Events
 
-Enterprise systems must react automatically to events.
+- Before Insert
+- After Insert
+- Before Update
+- After Update
+- Before Delete
+- After Delete
 
-Examples:
-- Send email after registration
-- Notify faculty when course is full
-- Alert students about low attendance
+---
 
-Triggers make systems responsive and intelligent.
+# Before Trigger
+
+Before Triggers run before records are saved into the database.
+
+They are mainly used for:
+- Validation
+- Updating values before save
+- Preventing incorrect data
+
+## Example
+
+```java
+trigger StudentBeforeTrigger on Student__c (before insert) {
+
+    for(Student__c stu : Trigger.new) {
+
+        if(stu.Age__c < 0) {
+
+            stu.addError('Age cannot be negative');
+
+        }
+
+    }
+
+}
+```
+
+This trigger prevents invalid age values.
+
+---
+
+# After Trigger
+
+After Triggers run after records are saved into the database.
+
+They are mainly used for:
+- Sending notifications
+- Updating related records
+- External integrations
+
+## Example
+
+```java
+trigger StudentAfterTrigger on Student__c (after insert) {
+
+    for(Student__c stu : Trigger.new) {
+
+        System.debug('Welcome Email Sent To: ' + stu.Name);
+
+    }
+
+}
+```
+
+This trigger automatically performs actions after record creation.
 
 ---
 
@@ -70,19 +116,7 @@ Triggers make systems responsive and intelligent.
 | No-code automation | Code-based automation |
 | Easier to build | Requires programming |
 | Best for simple automation | Best for complex logic |
-| Limited flexibility | Highly flexible |
-| Faster implementation | Advanced customization |
-
----
-
-# Difference Between Before and After Trigger
-
-| Before Trigger | After Trigger |
-|---|---|
-| Runs before record is saved | Runs after record is saved |
-| Used for validations | Used for notifications |
-| Modify record values | Perform related actions |
-| Faster processing | Access final saved record |
+| Faster implementation | Advanced flexibility |
 
 ---
 
@@ -93,8 +127,8 @@ Triggers make systems responsive and intelligent.
 ### Trigger Event
 After Insert
 
-### Why?
-When a student record is created, the system automatically sends a welcome email.
+### Purpose
+Automatically send welcome message after registration.
 
 ---
 
@@ -103,8 +137,8 @@ When a student record is created, the system automatically sends a welcome email
 ### Trigger Event
 After Update
 
-### Why?
-When remaining seats become zero, faculty receives notification.
+### Purpose
+Notify faculty when no seats remain.
 
 ---
 
@@ -113,8 +147,8 @@ When remaining seats become zero, faculty receives notification.
 ### Trigger Event
 After Update
 
-### Why?
-When attendance is updated and falls below minimum requirement, alert student.
+### Purpose
+Alert students with low attendance.
 
 ---
 
@@ -123,90 +157,70 @@ When attendance is updated and falls below minimum requirement, alert student.
 ### Trigger Event
 After Update
 
-### Why?
-When payment is completed, fee status changes automatically.
+### Purpose
+Automatically mark fees as paid.
 
 ---
 
-## 5. After Student Withdraws → Increase Available Seats
+## 5. After Student Withdrawal → Increase Available Seats
 
 ### Trigger Event
-After Delete or Update
+After Delete
 
-### Why?
-When a student leaves a course, available seats should increase automatically.
-
----
-
-# Flow vs Trigger Thinking
-
-| Scenario | Best Choice | Reason |
-|---|---|---|
-| Simple email notification | Flow | Easy no-code automation |
-| Complex fee eligibility check | Apex Trigger | Requires advanced logic |
-| Updating related records | Flow | Simple automation |
-| External API integration | Apex Trigger | Requires programming |
-| Multi-condition validations | Apex Trigger | Better flexibility |
+### Purpose
+Update available course seats automatically.
 
 ---
 
-# Query Thinking
+# Query Thinking Examples
 
-## Query Examples
+## Find all students in Course A
 
-### 1. Find all students in Course A
-
-Retrieve all student records enrolled in Course A.
-
----
-
-### 2. Find all courses handled by Faculty X
-
-Retrieve all courses assigned to a specific faculty member.
+```sql
+SELECT Name
+FROM Student__c
+WHERE Course__c = 'Course A'
+```
 
 ---
 
-### 3. Find students with attendance below 75%
+## Find all courses handled by Faculty X
 
-Retrieve all students whose attendance percentage is less than 75%.
-
----
-
-### 4. Find students with pending fees
-
-Retrieve all students whose fee status is unpaid.
+```sql
+SELECT Name
+FROM Course__c
+WHERE Faculty__c = 'Faculty X'
+```
 
 ---
 
-### 5. Find courses with no available seats
+## Find students with attendance below 75%
 
-Retrieve all courses where remaining seats equal zero.
+```sql
+SELECT Name, Attendance__c
+FROM Student__c
+WHERE Attendance__c < 75
+```
 
 ---
 
 # Reflection – Why Enterprise Systems Need Event-Driven Behavior
 
-Enterprise systems manage thousands of operations daily.
+Enterprise systems handle thousands of data changes daily.
 
 Systems must automatically react to:
-- Data changes
+- Record updates
 - User actions
 - Business events
-- Updates in records
+- Notifications
 
-Without event-driven behavior:
-- Processes become slow
-- Errors increase
-- Manual work increases
-- Productivity decreases
-
-Triggers and automation help enterprise systems:
-- Respond instantly
-- Maintain consistency
+Triggers and automation help:
 - Improve efficiency
-- Reduce human effort
+- Reduce manual work
+- Maintain consistency
+- Increase productivity
 
-Salesforce uses Flows and Apex Triggers to build intelligent business systems.
+Salesforce uses Flows and Apex Triggers to create intelligent enterprise systems.
 
 ---
 
@@ -214,7 +228,7 @@ Salesforce uses Flows and Apex Triggers to build intelligent business systems.
 
 ## 1. Why do systems need triggers?
 
-Triggers allow systems to respond automatically when data changes occur.
+Triggers help systems react automatically when database events occur.
 
 ---
 
@@ -222,55 +236,51 @@ Triggers allow systems to respond automatically when data changes occur.
 
 | Polling | Event-Driven |
 |---|---|
-| Continuously checks for changes | Reacts only when events occur |
+| Continuously checks for updates | Reacts only when events occur |
+| Slower | Faster |
 | Less efficient | More efficient |
-| Slower response | Instant response |
 
 ---
 
 ## 3. Why are database queries important?
 
-Queries help retrieve required data quickly and efficiently from large databases.
+Queries help retrieve required data quickly and efficiently.
 
 ---
 
 ## 4. When should Flows be preferred over Triggers?
 
-Flows should be preferred when:
-- Logic is simple
-- No coding is needed
-- Faster implementation is required
+Flows should be preferred for:
+- Simple automation
+- Faster implementation
+- No-code solutions
 
 ---
 
 ## 5. What problems happen if automation logic becomes too complex?
 
 Complex automation may:
-- Become difficult to maintain
-- Reduce performance
+- Reduce maintainability
 - Increase errors
-- Create debugging difficulties
+- Affect performance
 
 ---
 
 ## 6. Why should developers think carefully before automating actions?
 
-Poor automation design may:
-- Cause incorrect actions
-- Trigger unnecessary operations
+Poor automation design can:
+- Trigger unnecessary actions
 - Reduce system efficiency
-
-Developers should automate only meaningful and well-designed business processes.
+- Create maintenance problems
 
 ---
 
 # Day 6 Learning Outcome
 
 By the end of Day 6, I understood:
-- How Salesforce retrieves data using SOQL
-- What Apex Triggers are
-- How event-driven systems work
-- Difference between Flow and Trigger
-- Difference between Before and After Trigger
+- What SOQL is
+- How Salesforce retrieves data
+- What Apex Triggers do
+- Difference between Before and After Triggers
 - How enterprise systems react automatically to data changes
 ```
