@@ -169,6 +169,14 @@ Auto Email After Student Registration
 
 ---
 
+```md
+# Flow Design Thinking
+
+## Selected Process:
+Auto Email After Student Registration
+
+---
+
 # Flow Diagram
 
 ```text
@@ -190,7 +198,9 @@ Auto Email After Student Registration
          |
          v
         End
-'''md
+```
+```
+
 # Manual vs Automated Process
 
 ## Process: Fee Payment Reminder
