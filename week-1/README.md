@@ -79,3 +79,150 @@ Learned:
 - Managing practice environment
 - Completing Trailhead challenges
 - Hands-on platform usage
+
+# Day 2 – Salesforce Platform Basics
+
+## Introduction
+
+Day 2 focused on understanding the Salesforce Platform architecture and how Salesforce applications are structured internally. The session covered Apps, Objects, Tabs, multi-tenant architecture, configuration vs coding, and real-world system design concepts using Salesforce.
+
+The learning also explained how CRM concepts such as Accounts, Contacts, Leads, and Opportunities are managed inside the Salesforce Platform using apps and objects.
+
+---
+
+## Topics Covered
+
+- Salesforce Platform Overview
+- CRM Concepts Inside Salesforce
+- Apps, Objects, and Tabs
+- Multi-Tenant Architecture
+- Configuration vs Coding
+- Apex and Development Basics
+- Real System Design Thinking
+- College Management System Example
+
+---
+
+## Key Learnings
+
+- Understood how Salesforce Platform works internally
+- Learned the purpose of Apps, Objects, and Tabs
+- Understood how CRM concepts fit into Salesforce
+- Explored Salesforce multi-tenant architecture
+- Learned the difference between configuration and coding
+- Understood when to use Apex programming
+- Learned how Salesforce applications are designed
+- Explored real-world system design using a College Management System
+
+---
+
+## Modules Completed
+
+### Agentforce 360 Platform Basics
+Learned:
+- Platform overview
+- Salesforce navigation
+- Apps and objects
+- Architecture basics
+
+### Agentforce 360 Platform Development Basics
+Learned:
+- Configuration vs coding
+- Apex overview
+- Development concepts
+- APIs and integrations
+
+### Salesforce Development Basics
+Learned:
+- Development workflow
+- Playground usage
+- Practical implementation basics
+
+---
+
+
+
+## Conclusion
+
+Day 2 provided a strong understanding of Salesforce Platform structure, application architecture, CRM integration, and development concepts. It also introduced real-world thinking for designing business applications using Salesforce.
+
+
+
+---
+
+# Day 3 – Data Modeling and Business Logic
+
+## Topics Learned
+- Objects
+- Fields
+- Records
+- Relationships
+- Formula Fields
+- Validation Rules
+- Schema Builder
+
+---
+
+## Key Concepts
+
+### Objects and Records
+Objects store data while records are individual entries.
+
+### Relationships
+Relationships connect business data together.
+
+### Formula Fields
+Used for automatic calculations.
+
+### Validation Rules
+Used to prevent invalid data.
+
+---
+
+# College Management System
+
+## Objects Created
+- Student
+- Faculty
+- Course
+- Department
+
+## Relationships
+- Department → Faculty
+- Department → Course
+- Course → Student
+- Faculty → Course
+
+---
+
+# Skills Developed
+
+## Technical Skills
+- CRM Understanding
+- Salesforce Navigation
+- Data Modeling
+- Relationship Design
+- Business Logic Automation
+
+---
+
+## Problem Solving Skills
+- Structured thinking
+- Enterprise workflow understanding
+- Data consistency management
+- Automation planning
+
+---
+
+# Important Learnings
+
+1. Enterprise applications require structured data.
+2. Relationships are essential.
+3. Automation reduces manual work.
+4. Salesforce is metadata-driven.
+5. Data quality is very important.
+
+---
+
+# Conclusion
+Week 1 provided a strong foundation in Salesforce basics and enterprise data management concepts. These concepts are essential for advanced Salesforce development and automation.
